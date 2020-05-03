@@ -1,0 +1,211 @@
+Rank,Division,Code,Name,Twitter,Crest
+1,1,BEL,Belgium,@BelRedDevils,crests/BEL
+2,1,FRA,France,@equipedefrance,crests/FRA
+3,1,BRA,Brazil,@CBF_Futebol,crests/BRA
+4,1,ENG,England,@England,crests/ENG
+5,1,URU,Uruguay,@Uruguay,crests/URU
+6,1,CRO,Croatia,@HNS_CFF,crests/CRO
+7,1,POR,Portugal,@selecaoportugal,crests/POR
+8,1,ESP,Spain,@SeFutbol,crests/ESP
+9,1,ARG,Argentina,@Argentina,crests/ARG
+10,1,COL,Colombia,@FCFSeleccionCol,crests/COL
+11,1,MEX,Mexico,@miseleccionmx,crests/MEX
+12,1,SUI,Switzerland,@SFV_ASF,crests/SUI
+13,1,ITA,Italy,@azzurri,crests/ITA
+14,1,NED,Netherlands,@OnsOranje,crests/NED
+15,1,GER,Germany,@DFB_Team,crests/GER
+16,1,DEN,Denmark,@dbulandshold,crests/DEN
+17,1,CHI,Chile,@LaRoja,crests/CHI
+17,1,SWE,Sweden,@svenskfotboll,crests/SWE
+19,1,POL,Poland,@pzpn_pl,crests/POL
+20,1,SEN,Senegal,@FootballSenegal,crests/SEN
+21,2,PER,Peru,@SeleccionPeru,crests/PER
+22,2,USA,United States,@USMNT,crests/USA
+23,2,WAL,Wales,@Cymru,crests/WAL
+24,2,UKR,Ukraine,@uafukraine,crests/UKR
+25,2,VEN,Venezuela,@SeleVinotinto,crests/VEN
+26,2,AUT,Austria,@oefb1904,crests/AUT
+27,2,TUN,Tunisia,@ftf_officiel,crests/TUN
+28,2,JPN,Japan,@jfa_samuraiblue,crests/JPN
+29,2,SRB,Serbia,@FSSrbije,crests/SRB
+29,2,TUR,Turkey,@TFF_Org,crests/TUR
+31,2,NGA,Nigeria,@NGSuperEagles,crests/NGA
+32,2,SVK,Slovakia,@sfzofficial,crests/SVK
+33,2,IRN,Iran,@TeamMelliIran,crests/IRN
+34,2,IRL,Ireland,@FAIreland,crests/IRL
+35,2,ALG,Algeria,@LesVerts,crests/ALG
+36,2,NIR,Northern Ireland,@NorthernIreland,crests/NIR
+37,2,ROU,Romania,@hai_romania,crests/ROU
+38,2,RUS,Russia,@TeamRussia,crests/RUS
+39,2,ISL,Iceland,@footballiceland,crests/ISL
+40,2,KOR,South Korea,@theKFA,crests/KOR
+41,3,PAR,Paraguay,@Albirroja,crests/PAR
+42,3,AUS,Australia,@Socceroos,crests/AUS
+43,3,MAR,Morocco,@EnMaroc,crests/MAR
+44,3,NOR,Norway,@nff_landslag,crests/NOR
+45,3,CZE,Czech Republic,@ceskarepre_cz,crests/CZE
+46,3,CRC,Costa Rica,@fedefutbolcrc,crests/CRC
+46,3,GHA,Ghana,@ghanafaofficial,crests/GHA
+48,3,JAM,Jamaica,@jff_football,crests/JAM
+49,3,BIH,Bosnia and Herzegovina,@NFSBiH,crests/BIH
+50,3,SCO,Scotland,@ScotlandNT,crests/SCO
+51,3,EGY,Egypt,@Pharaohs,crests/EGY
+52,3,HUN,Hungary,@MLSZhivatalos,crests/HUN
+53,3,CMR,Cameroon,@FecafootOfficie,crests/CMR
+54,3,GRE,Greece,@EthnikiOmada,crests/GRE
+55,3,QAT,Qatar,@QFA,crests/QAT
+56,3,COD,DR Congo,@fecofa_cd,crests/COD
+56,3,MLI,Mali,@FootballMali,crests/MLI
+58,3,FIN,Finland,@Huuhkajat,crests/FIN
+59,3,BUL,Bulgaria,@BFU_1923,crests/BUL
+59,3,BFA,Burkina Faso,@FBF226,crests/BFA
+61,4,CIV,Côte d'Ivoire,@FIFCI_tweet,crests/CIV
+62,4,HON,Honduras,@FenafuthOrg,crests/HON
+63,4,ECU,Ecuador,@FEFecuador,crests/ECU
+64,4,MNE,Montenegro,@FudbalskiSavez,crests/MNE
+64,4,SVN,Slovenia,@nzs_si,crests/SVN
+66,4,ALB,Albania,@FSHForg,crests/ALB
+67,4,KSA,Saudi Arabia,@SaudiNT,crests/KSA
+68,4,MKD,North Macedonia,@ffmmkd,crests/MKD
+69,4,SLV,El Salvador,@LaSelecta_SLV,crests/SLV
+70,4,IRQ,Iraq,@IRAQFA,crests/IRQ
+71,4,RSA,South Africa,@BafanaBafana,crests/RSA
+71,4,UAE,United Arab Emirates,@UAEFNT,crests/UAE
+73,4,CAN,Canada,@CanadaSoccerEN,crests/CAN
+74,4,GUI,Guinea,@Feguifoot1,crests/GUI
+75,4,BOL,Bolivia,@fbf_oficial,crests/BOL
+76,4,CHN,China,@CFA,crests/CHN
+77,4,UGA,Uganda,@UgandaCranes,crests/UGA
+78,4,CPV,Cape Verde,@fcfcomunica,crests/CPV
+79,4,SYR,Syria,Syria,crests/SYR
+80,4,CUW,Curaçao,Curaçao,crests/CUW
+81,5,PAN,Panama,@fepafut,crests/PAN
+82,5,OMA,Oman,@OmanFA,crests/OMA
+83,5,GAB,Gabon,@fegafoot_gabon,crests/GAB
+84,5,BEN,Benin,@fbfofficiel,crests/BEN
+85,5,UZB,Uzbekistan,@TeamUzbekistan,crests/UZB
+86,5,HAI,Haiti,@fhfhaiti,crests/HAI
+87,5,BLR,Belarus,@BelFootFeder,crests/BLR
+88,5,ZAM,Zambia,@FAZFootball,crests/ZAM
+89,5,CGO,Congo,@FecoOfficiel,crests/CGO
+89,5,LBN,Lebanon,@Lebanon_FA,crests/LBN
+91,5,MAD,Madagascar,@fmfmdg,crests/MAD
+91,5,GEO,Georgia,@GeorgianFF,crests/GEO
+93,5,ISR,Israel,@ISRAELFA,crests/ISR
+94,5,VIE,Vietnam,@VNFOfficial,crests/VIE
+95,5,CYP,Cyprus,@CyprusFA,crests/CYP
+96,5,KGZ,Kyrgyzstan,@kfu_kg,crests/KGZ
+97,5,JOR,Jordan,@JordanFA,crests/JOR
+98,5,LUX,Luxembourg,@flf_lu,crests/LUX
+99,5,BHR,Bahrain,@BahrainFA,crests/BHR
+100,5,MTN,Mauritania,@ffrim,crests/MTN
+101,6,LBY,Libya,@LibyaFootball,crests/LBY
+102,6,ARM,Armenia,@OfficialArmFF,crests/ARM
+103,6,PLE,Palestine,Palestina,crests/PLE
+104,6,EST,Estonia,@eestijalgpall,crests/EST
+105,6,TRI,Trinidad and Tobago,@TTFootballAssoc,crests/TRI
+106,6,MOZ,Mozambique,@FederacaoF,crests/MOZ
+107,6,KEN,Kenya,@harambee__stars,crests/KEN
+108,6,IND,India,@IndianFootball,crests/IND
+109,6,CTA,Central African Republic,Central African Republic,crests/CTA
+110,6,FRO,Faroe Islands,@FaeroskFodbold,crests/FRO
+111,6,ZIM,Zimbabwe,@online_zifa,crests/ZIM
+112,6,NIG,Niger,@fenifoot,crests/NIG
+113,6,THA,Thailand,@FAThailand,crests/THA
+114,6,AZE,Azerbaijan,Azerbaijan ,crests/AZE
+115,6,KVX,Kosovo,@FFK_KS,crests/KVX
+116,6,PRK,North Korea,North Korea,crests/PRK
+117,6,NAM,Namibia,@Official_NFA,crests/NAM
+118,6,KAZ,Kazakhstan,@KFF_Team,crests/KAZ
+118,6,GNB,Guinea-Bissau,Guinea-Bissau,crests/GNB
+118,6,SLE,Sierra Leone,@OfficialSLFA,crests/SLE
+121,7,TJK,Tajikistan,@fft_official,crests/TJK
+122,7,NZL,New Zealand,@NZ_Football,crests/NZL
+123,7,MWI,Malawi,@FaMalawi,crests/MWI
+124,7,ANG,Angola,@faffutebol,crests/ANG
+124,7,PHI,Philippines,@philfootball,crests/PHI
+126,7,ATG,Antigua and Barbuda,@AntiguaFA,crests/ATG
+126,7,TOG,Togo,@TogoFtf,crests/TOG
+128,7,SDN,Sudan,@SFASocial,crests/SDN
+129,7,TKM,Turkmenistan,@FedTurkm,crests/TKM
+130,7,GUA,Guatemala,@fedefut_oficial,crests/GUA
+131,7,RWA,Rwanda,@FERWAFA,crests/RWA
+131,7,LTU,Lithuania,@ltfutbolas,crests/LTU
+133,7,COM,Comoros,@fedcomfootball,crests/COM
+134,7,TAN,Tanzania,@Tanfootball,crests/TAN
+135,7,AND,Andorra,@Fedandfut,crests/AND
+136,7,MYA,Myanmar,@The_MFF,crests/MYA
+137,7,LVA,Latvia,@kajbumba,crests/LVA
+138,7,TPE,Taiwan,@ctfa_football,crests/TPE
+139,7,LES,Lesotho,@FootballLesotho,crests/LES
+139,7,SKN,St. Kitts and Nevis,@SKNFA_,crests/SKN
+141,8,SOL,Solomon Islands,@futbolsolomon,crests/SOL
+141,8,SUR,Suriname,@surinaamsevoet1,crests/SUR
+143,8,HKG,Hong Kong,Hong Kong,crests/HKG
+144,8,YEM,Yemen,@Yemenfa,crests/YEM
+145,8,EQG,Equatorial Guinea,@NzalangNacional,crests/EQG
+146,8,ETH,Ethiopia,@footballethiop,crests/ETH
+147,8,KUW,Kuwait,@KuwaitFA,crests/KUW
+148,8,BOT,Botswana,@WeAreBFA,crests/BOT
+149,8,BDI,Burundi,@BurundiFF,crests/BDI
+149,8,AFG,Afghanistan,@theaffofficial,crests/AFG
+151,8,NCA,Nicaragua,@Fenifutnica,crests/NCA
+152,8,LBR,Liberia,@FootballLiberia,crests/LBR
+153,8,SWZ,Eswatini,@eswatinifa,crests/SWZ
+154,8,MAS,Malaysia,@HarimauMY,crests/MAS
+155,8,MDV,Maldives,@MaldivesFA,crests/MDV
+156,8,NCL,New Caledonia,New Caledonia,crests/NCL
+157,8,SIN,Singapore,@FASingapore,crests/SIN
+158,8,DOM,Dominican Republic,@fedofutbol,crests/DOM
+159,8,GRN,Grenada,@GrenadaFootball,crests/GRN
+159,8,GAM,Gambia,@TheGambiaFF,crests/GAM
+161,9,TAH,Tahiti,@TahitiFootball_,crests/TAH
+162,9,BRB,Barbados,@BarbadosFA,crests/BRB
+163,9,FIJ,Fiji,@FijiFootball,crests/FIJ
+163,9,VAN,Vanuatu,@vanuafoot,crests/VAN
+165,9,PNG,Papua New Guinea,Papua New Guinea,crests/PNG
+166,9,GUY,Guyana,@GFF_Inc_,crests/GUY
+167,9,VIN,St. Vincent and the Grenadines,@SVGFootball,crests/VIN
+168,9,BER,Bermuda,@BermudaFA,crests/BER
+168,9,SSD,South Sudan,@ssfa_com,crests/SSD
+170,9,BLZ,Belize,@bzefootballfed,crests/BLZ
+170,9,NEP,Nepal,@theanfacom,crests/NEP
+172,9,MRI,Mauritius,@MauritiusFA,crests/MRI
+173,9,IDN,Indonesia,@PSSI,crests/IDN
+173,9,CAM,Cambodia,@thecamsfootball,crests/CAM
+175,9,MDA,Moldova,@MoldovaFA,crests/MDA
+176,9,LCA,St. Lucia,@SaintLuciaFA,crests/LCA
+177,9,CHA,Chad,Chad,crests/CHA
+178,9,PUR,Puerto Rico,@FutbolPR,crests/PUR
+179,9,CUB,Cuba,Cuba,crests/CUB
+180,9,LIE,Liechtenstein,@LFV_Football,crests/LIE
+181,10,STP,São Tomé and Príncipe,São Tomé and Príncipe,crests/STP
+182,10,MAC,Macau,Macau,crests/MAC
+183,10,MSR,Montserrat,@Montserrat_FA,crests/MSR
+184,10,DJI,Djibouti,@1979_fdf,crests/DJI
+184,10,DMA,Dominica,@DominicaFootball,crests/DMA
+184,10,MLT,Malta,@MaltaFA1900,crests/MLT
+187,10,BAN,Bangladesh,@bff_football,crests/BAN
+188,10,LAO,Laos,Laos,crests/LAO
+189,10,BHU,Bhutan,@BhutanFootball,crests/BHU
+190,10,MNG,Mongolia,@the_mff17,crests/MNG
+191,10,BRU,Brunei,@bruneifootball,crests/BRU
+192,10,ASA,American Samoa,@AmSamoaSoccer,crests/ASA
+193,10,CAY,Cayman Islands,@theCIFAofficial,crests/CAY
+194,10,SAM,Samoa,@SokaSamoa,crests/SAM
+195,10,BAH,Bahamas,@BahamasFA,crests/BAH
+196,10,GIB,Gibraltar,@GibraltarFA,crests/GIB
+196,10,SOM,Somalia,@SomaliFA,crests/SOM
+196,10,TLS,Timor-Leste,@FFTLfutebol,crests/TLS
+199,10,GUM,Guam,@GuamFootball,crests/GUM
+200,10,ARU,Aruba,@ArubaAVB,crests/ARU
+200,11,PAK,Pakistan,@PakistanFF,crests/PAK
+202,11,SEY,Seychelles,Seychelles,crests/SEY
+203,11,TCA,Turks and Caicos Islands,@TCIFA_,crests/TCA
+203,11,TGA,Tonga,@TongaFootball,crests/TGA
+205,11,ERI,Eritrea,@ENFFonline,crests/ERI
+206,11,SRI,Sri Lanka,@OfficialFFSL,crests/SRI
+207,11,VIR,US Virgin Islands,@USVISoccerNT,crests/VIR
+208,11,VGB,British Virgin Islands,@BvifaNews,crests/VGB
+209,11,SMR,San Marino,@CalcioSanMarino,crests/SMR
+210,11,AIA,Anguilla,Anguilla,crests/AIA
