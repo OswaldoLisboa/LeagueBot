@@ -17,27 +17,6 @@ DIVISIONS = {
 }
 
 
-def json_maker(csv_file, json_file):
-    """
-    Read a csv file with the infotmation of the teams and create a
-    json file with the information.
-    """
-    df = pd.read_csv(csv_file)
-    teams = {}
-
-    for i in range(1, len(DIVISIONS.keys()) + 1):
-        teams[DIVISIONS[i]] = {}
-
-    for i, row in df.iterrows():
-        teams[DIVISIONS[row["Division"]]][row["Code"]] = {}
-        teams[DIVISIONS[row["Division"]]][row["Code"]]["Name"] = row["Name"]
-        teams[DIVISIONS[row["Division"]]][row["Code"]]["Twitter"] = row["Twitter"]
-        teams[DIVISIONS[row["Division"]]][row["Code"]]["Crest"] = row["Crest"]
-
-    with open(json_file, "w", encoding="utf-8") as file:
-        json.dump(teams, file, ensure_ascii=False)
-
-
 def df_creator(div, json_file):
     """
     Read a json file and returns a dataframes containing the
