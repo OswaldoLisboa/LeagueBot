@@ -36,21 +36,22 @@ def generate_schedule_promoted_relegated(teams, fixtures):
             if (j + 1 != int(fixtures[i].tail(1)["Matchday"])):
                 next_matchday_msg = generate_messages.generate_next_matchday_msg(create_league.DIVISIONS[i+1], j+2)
                 messages = messages.append({"TYPE":"3 - Next Matchday", "DIV":i+1, "MD":j+1, "GM":100,"MSG":next_matchday_msg}, ignore_index=True)
+
         final_standings = run_league.generate_standings(j+1, fixtures[i], teams[create_league.DIVISIONS[i+1]])
         if i + 1 != len(create_league.DIVISIONS.keys()):
             relegated = teams[create_league.DIVISIONS[i+1]].loc[final_standings.tail(3).index]
             relegation.append(relegated)
             relegated_msg = generate_messages.generate_relegated_msg(create_league.DIVISIONS[i+1], create_league.DIVISIONS[i+2], relegated)
-            messages = messages.append({"TYPE":"4 - Relegated", "DIV":i+1, "MD":j+1, "GM":100,"MSG":relegated_msg}, ignore_index=True)
+            messages = messages.append({"TYPE":"4 - Relegated", "DIV":i+1, "MD":100, "GM":100,"MSG":relegated_msg}, ignore_index=True)
         if i != 0:
             promoted = teams[create_league.DIVISIONS[i+1]].loc[final_standings.head(3).index]
             promotion.append(promoted)
             promoted_msg = generate_messages.generate_promoted_msg(create_league.DIVISIONS[i+1], create_league.DIVISIONS[i], promoted)
-            messages = messages.append({"TYPE":"5 - Promoted", "DIV":i+1, "MD":j+1, "GM":100,"MSG":promoted_msg}, ignore_index=True)
+            messages = messages.append({"TYPE":"5 - Promoted", "DIV":i+1, "MD":100, "GM":100,"MSG":promoted_msg}, ignore_index=True)
         champion = teams[create_league.DIVISIONS[i+1]].loc[final_standings.head(1).index[0]]
         champion_msg = generate_messages.generate_champion_msg(create_league.DIVISIONS[i+1], champion)
-        messages = messages.append({"TYPE":"6 - Champions", "DIV":i+1, "MD":j+1, "GM":100,"MSG":champion_msg}, ignore_index=True)
-    messages = messages.sort_values(["MD", "GM", "DIV", "TYPE"], ascending=True)
+        messages = messages.append({"TYPE":"6 - Champions", "DIV":i+1, "MD":100, "GM":100,"MSG":champion_msg}, ignore_index=True)
+    messages = messages.sort_values(["MD", "GM", "TYPE", "DIV"], ascending=True)
     messages.to_csv("data/messages.csv", index=False)
     return promotion, relegation
 
