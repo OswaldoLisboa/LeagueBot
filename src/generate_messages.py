@@ -25,29 +25,6 @@ def generate_match_msg(division, teams, match, matchday, match_number):
     return match_msg
 
 
-def generate_next_match_msg(division, teams, match, matchday, match_number):
-    """
-    Generate a string containing the info of the next match.
-    """
-    next_match_msg = ""
-    next_match_msg += "{} - Matchday {} - Game {}\n\n".format(
-        division,
-        matchday,
-        match_number
-    )
-    next_match_msg += "{} - {}\n\n".format(
-        teams.loc[match["Home"]]["Twitter"].iloc[0],
-        teams.loc[match["Away"]]["Twitter"].iloc[0]
-    )
-    next_match_msg += "#LeagueBot #{} #{} #{}".format(
-        teams.loc[match["Home"]]["Name"].iloc[0].replace(" ", ""),
-        teams.loc[match["Away"]]["Name"].iloc[0].replace(" ", ""),
-        division.replace(" ", "")
-    )
-
-    return next_match_msg
-
-
 def generate_standings_msg(division, matchday):
     """
     Generate a string that will be tweeted along with the standing image.
