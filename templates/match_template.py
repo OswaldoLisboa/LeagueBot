@@ -1,10 +1,10 @@
 template = """<div class="container">
   <div></div>
-  <div class="inside text">1st Division</div>
+  <div class="inside text">{division}</div>
   <div></div>
-  <div class="inside text">Matchday 38</div>
+  <div class="inside text">Matchday {matchday}</div>
   <div></div>
-  <div class="inside text">Game 1</div>
+  <div class="inside text">Game {game}</div>
   <div></div>
   <div></div>
   <div class="inside"><img class="crest" src="{home_crest}" alt="{home_name}"></div>
