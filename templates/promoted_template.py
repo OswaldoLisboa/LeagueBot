@@ -4,7 +4,7 @@ template = """<div class="container">
   <div></div>
   <div class="inside"><img class="crest" src="{promoted1_crest_file}" alt="{promoted1_name}"></div>
   <div class="inside"><img class="crest" src="{promoted2_crest_file}" alt="{promoted2_name}"></div>
-  <div class="inside"><img class="crest" src="Bpromoted3_crest_file" alt="{promoted3_name}"></div>
+  <div class="inside"><img class="crest" src="{promoted3_crest_file}" alt="{promoted3_name}"></div>
   <div class="inside text">{promoted1_name}</div>
   <div class="inside text">{promoted2_name}</div>
   <div class="inside text">{promoted3_name}</div>

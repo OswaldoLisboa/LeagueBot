@@ -1,6 +1,6 @@
 template = """<div class="container">
   <div class="inside text">{division} Champions</div>
-  <div class="inside"><img class="crest" src="{crest_file}" alt="{champion_name}"></div>
+  <div class="inside"><img class="crest" src="{champion_crest}" alt="{champion_name}"></div>
   <div class="inside text">{champion_name}</div>
   <div class="inside text">{champion_twitter}</div>
   <div></div>
