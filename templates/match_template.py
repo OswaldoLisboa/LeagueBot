@@ -30,34 +30,34 @@ template = """<div class="container">
 </div>
 
 <style media="screen">
-  .container {
+  .container {{
     background-image: linear-gradient(to right, #1d976c, #63da91);
     height: 512px;
     width: 1024px;
     display: grid;
     grid-template-columns: 1fr 380px 2fr 140px 2fr 380px 1fr;
     grid-template-rows: 2fr 380px 1fr 1fr;
-  }
+  }}
 
-  .inside {
+  .inside {{
     margin: auto;
-  }
+  }}
 
-  .crest {
+  .crest {{
     width: 250px;
     height: auto;
-  }
+  }}
 
-  .text, .score {
+  .text, .score {{
     color: 	#FFFAFA;
     font-family: helvetica;
-  }
+  }}
 
-  .text {
+  .text {{
     font-size: 22;
-  }
+  }}
 
-  .score {
+  .score {{
     font-size: 64;
-  }
+  }}
 </style>"""

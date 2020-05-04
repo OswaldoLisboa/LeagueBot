@@ -1,5 +1,5 @@
 .DS_Store
-src/__pycache__
+*__pycache__
 src/credentials.py
 data/*
 !data/.gitkeep
