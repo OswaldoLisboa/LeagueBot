@@ -1,49 +1,60 @@
-template = """<div class="container">
-  <div></div>
-  <div class="inside text">Relegated to {division}</div>
-  <div></div>
-  <div class="inside"><img class="crest" src="{relegated1_crest_file}" alt="{relegated1_name}"></div>
-  <div class="inside"><img class="crest" src="{relegated2_crest_file}" alt="{relegated2_name}"></div>
-  <div class="inside"><img class="crest" src="{relegated3_crest_file}" alt="{relegated3_name}"></div>
-  <div class="inside text">{relegated1_name}</div>
-  <div class="inside text">{relegated2_name}</div>
-  <div class="inside text">{relegated3_name}</div>
-  <div class="inside text">{relegated1_twitter}</div>
-  <div class="inside text">{relegated2_twitter}</div>
-  <div class="inside text">{relegated3_twitter}/div>
-  <div></div>
-</div>
+template = """<style>
+  body {{
+     background-image: -webkit-linear-gradient(right, #1d976c, #63da91);
+     height: 512px;
+     width: 1024px;
+     color: 	#FFFAFA;
+     font-family: helvetica;
+     text-align: center;
+   }}
 
-<style media="screen">
-  .container {{
-    background-image: linear-gradient(to right, #1d976c, #63da91);
-    height: 512px;
-    width: 1024px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 380px 1fr 1fr;
-  }}
+   table {{
+     border-spacing: 20;
+     text-align: center;
+     margin: auto;
+   }}
 
-  .inside {{
-    margin: auto;
-  }}
+   td, th {{
+     border: 1px solid transparent;
+     font-size: 32;
+   }}
 
-  .crest {{
-    width: auto;
-    height: 320px;
-  }}
+   img {{
+     width: 250px;
+     height: auto;
+   }}
 
-  .text, .score {{
-    color: 	#FFFAFA;
-    font-family: helvetica;
-  }}
+   .score {{
+     font-size: 44;
+   }}
 
-  .text {{
-    font-size: 22;
-  }}
+   .team {{
+     font-size: 32;
+   }}
 
-  .score {{
-    font-size: 64;
-  }}
 </style>
+
+<body>
+
+  <h1>Relegated to {division}</h1>
+
+  <table>
+    <tr>
+      <td><img src="{relegated1_crest_file}.png" alt="{relegated1_name}"></td>
+      <td><img src="{relegated2_crest_file}.png" alt="{relegated2_name}"></td>
+      <td><img src="{relegated3_crest_file}.png" alt="{relegated3_name}"></td>
+    </tr>
+    <tr>
+      <td class="team">{relegated1_name}</td>
+      <td class="team">{relegated2_name}</td>
+      <td class="team">{relegated3_name}</td>
+    </tr>
+    <tr>
+      <td class="team">{relegated1_twitter}</td>
+      <td class="team">{relegated2_twitter}</td>
+      <td class="team">{relegated3_twitter}</td>
+    </tr>
+  </table>
+
+</body>
 """

@@ -1,40 +1,54 @@
-template = """<div class="container">
-  <div class="inside text">{division} Champions</div>
-  <div class="inside"><img class="crest" src="{champion_crest}" alt="{champion_name}"></div>
-  <div class="inside text">{champion_name}</div>
-  <div class="inside text">{champion_twitter}</div>
-  <div></div>
-</div>
+template = """<style>
+  body {{
+     background-image: -webkit-linear-gradient(right, #1d976c, #63da91);
+     height: 512px;
+     width: 1024px;
+     color: 	#FFFAFA;
+     font-family: helvetica;
+     text-align: center;
+   }}
 
-<style media="screen">
-  .container {{
-    background-image: linear-gradient(to right, #1d976c, #63da91);
-    height: 512px;
-    width: 1024px;
-    display: grid;
-    grid-template-rows: 1fr 380px 1fr 1fr;
-  }}
+   table {{
+     border-spacing: 20;
+     text-align: center;
+     margin: auto;
+   }}
 
-  .inside {{
-    margin: auto;
-  }}
+   td, th {{
+     border: 1px solid transparent;
+     font-size: 32;
+   }}
 
-  .crest {{
-    width: auto;
-    height: 320px;
-  }}
+   img {{
+     width: 250px;
+     height: auto;
+   }}
 
-  .text, .score {{
-    color: 	#FFFAFA;
-    font-family: helvetica;
-  }}
+   .score {{
+     font-size: 44;
+   }}
 
-  .text {{
-    font-size: 22;
-  }}
+   .team {{
+     font-size: 32;
+   }}
 
-  .score {{
-    font-size: 64;
-  }}
 </style>
+
+<body>
+
+  <h1>{division} Champions</h1>
+
+  <table>
+    <tr>
+      <td><img src="{champion_crest}.png" alt="{champion_name}"></td>
+    </tr>
+    <tr>
+      <td class="team">{champion_name}</td>
+    </tr>
+    <tr>
+      <td class="team">{champion_twitter}</td>
+    </tr>
+  </table>
+
+</body>
 """

@@ -1,63 +1,65 @@
-template = """<div class="container">
-  <div></div>
-  <div class="inside text">{division}</div>
-  <div></div>
-  <div class="inside text">Matchday {matchday}</div>
-  <div></div>
-  <div class="inside text">Game {game}</div>
-  <div></div>
-  <div></div>
-  <div class="inside"><img class="crest" src="{home_crest}" alt="{home_name}"></div>
-  <div class="inside score">{home_score}</div>
-  <div class="inside score x">x</div>
-  <div class="inside score">{away_score}</div>
-  <div class="inside"><img class="crest" src="{away_crest}" alt="{away_name}"></div>
-  <div></div>
-  <div></div>
-  <div class="inside text">{home_name}</div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div class="inside text">{away_name}</div>
-  <div></div>
-  <div></div>
-  <div class="inside text">{home_twitter}</div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div class="inside text">{away_twitter}</div>
-  <div></div>
-</div>
+template = """<style>
 
-<style media="screen">
-  .container {{
-    background-image: linear-gradient(to right, #1d976c, #63da91);
+  body {{
+    background-image: -webkit-linear-gradient(right, #1d976c, #63da91);
     height: 512px;
     width: 1024px;
-    display: grid;
-    grid-template-columns: 1fr 380px 2fr 140px 2fr 380px 1fr;
-    grid-template-rows: 2fr 380px 1fr 1fr;
+    color: 	#FFFAFA;
+    font-family: helvetica;
+    text-align: center;
   }}
 
-  .inside {{
+  table {{
+    border-spacing: 20;
+    text-align: center;
     margin: auto;
   }}
 
-  .crest {{
+  td, th {{
+    border: 1px solid transparent;
+    font-size: 32;
+  }}
+
+  img {{
     width: 250px;
     height: auto;
   }}
 
-  .text, .score {{
-    color: 	#FFFAFA;
-    font-family: helvetica;
-  }}
-
-  .text {{
-    font-size: 22;
-  }}
-
   .score {{
-    font-size: 64;
+    font-size: 44;
   }}
-</style>"""
+
+  .team {{
+    font-size: 32;
+  }}
+
+</style>
+<body>
+
+  <h1>{division} - Matchday {matchday} - Game {game}</h1>
+
+  <table>
+    <tr>
+      <td><img src="{home_crest}.png" alt="{home_name}"></td>
+      <td class="score">{home_score}</td>
+      <td class="score">X</td>
+      <td class="score">{away_score}</td>
+      <td><img src="{away_crest}.png" alt="{away_name}"></td>
+    </tr>
+    <tr>
+      <td class="team">{home_name}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="team">{away_name}</td>
+    </tr>
+    <tr>
+      <td class="team">{home_twitter}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="team">{away_twitter}</td>
+    </tr>
+  </table>
+
+</body>"""

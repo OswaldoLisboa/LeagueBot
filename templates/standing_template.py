@@ -1,8 +1,13 @@
-template = """<style>
+template = """
+<body>
+{body}
+</body>
+
+<style>
     table {{
         color: 	333;
         font-family: Helvetica;
-        width: 600px;
+        width: 100%;
         border-collapse:
         collapse;
         border-spacing: 0;

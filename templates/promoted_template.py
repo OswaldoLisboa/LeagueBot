@@ -1,49 +1,60 @@
-template = """<div class="container">
-  <div></div>
-  <div class="inside text">Promoted to {division}</div>
-  <div></div>
-  <div class="inside"><img class="crest" src="{promoted1_crest_file}" alt="{promoted1_name}"></div>
-  <div class="inside"><img class="crest" src="{promoted2_crest_file}" alt="{promoted2_name}"></div>
-  <div class="inside"><img class="crest" src="{promoted3_crest_file}" alt="{promoted3_name}"></div>
-  <div class="inside text">{promoted1_name}</div>
-  <div class="inside text">{promoted2_name}</div>
-  <div class="inside text">{promoted3_name}</div>
-  <div class="inside text">{promoted1_twitter}</div>
-  <div class="inside text">{promoted2_twitter}</div>
-  <div class="inside text">{promoted3_twitter}/div>
-  <div></div>
-</div>
+template = """<style>
+  body {{
+     background-image: -webkit-linear-gradient(right, #1d976c, #63da91);
+     height: 512px;
+     width: 1024px;
+     color: 	#FFFAFA;
+     font-family: helvetica;
+     text-align: center;
+   }}
 
-<style media="screen">
-  .container {{
-    background-image: linear-gradient(to right, #1d976c, #63da91);
-    height: 512px;
-    width: 1024px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 380px 1fr 1fr;
-  }}
+   table {{
+     border-spacing: 20;
+     text-align: center;
+     margin: auto;
+   }}
 
-  .inside {{
-    margin: auto;
-  }}
+   td, th {{
+     border: 1px solid transparent;
+     font-size: 32;
+   }}
 
-  .crest {{
-    width: auto;
-    height: 320px;
-  }}
+   img {{
+     width: 250px;
+     height: auto;
+   }}
 
-  .text, .score {{
-    color: 	#FFFAFA;
-    font-family: helvetica;
-  }}
+   .score {{
+     font-size: 44;
+   }}
 
-  .text {{
-    font-size: 22;
-  }}
+   .team {{
+     font-size: 32;
+   }}
 
-  .score {{
-    font-size: 64;
-  }}
 </style>
+
+<body>
+
+  <h1>Promoted to {division}</h1>
+
+  <table>
+    <tr>
+      <td><img src="{promoted1_crest_file}.png" alt="{promoted1_name}"></td>
+      <td><img src="{promoted2_crest_file}.png" alt="{promoted2_name}"></td>
+      <td><img src="{promoted3_crest_file}.png" alt="{promoted3_name}"></td>
+    </tr>
+    <tr>
+      <td class="team">{promoted1_name}</td>
+      <td class="team">{promoted2_name}</td>
+      <td class="team">{promoted3_name}</td>
+    </tr>
+    <tr>
+      <td class="team">{promoted1_twitter}</td>
+      <td class="team">{promoted2_twitter}</td>
+      <td class="team">{promoted3_twitter}</td>
+    </tr>
+  </table>
+
+</body>
 """
