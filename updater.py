@@ -1,4 +1,4 @@
-# from src import twitter
+from src import twitter
 import time
 import sys
 import imgkit
@@ -52,8 +52,7 @@ if __name__ == "__main__":
             while STARTTIME + schedule.iloc[i]["TIMEDELTA"] > dt.datetime.now():
                 time.sleep(30)
             generate_images(row)
-            print(row["MSG"])
-            # twitter.tweet(row["MSG"], row["IMG"])
-            # row["SENT"] = True
-            # schedule.iloc[i] = row
-            # schedule.to_csv("schedule.csv")
+            twitter.tweet(row["MSG"], row["IMG"])
+            row["SENT"] = True
+            schedule.iloc[i] = row
+            schedule.to_csv("schedule.csv")
