@@ -3,3 +3,17 @@
 src/credentials.py
 data/*
 !data/.gitkeep
+images/champions/*
+!images/champions/.gitkeep
+images/crests/*
+!images/crests/.gitkeep
+images/matches/*
+!images/matches/.gitkeep
+images/promoted/*
+!images/promoted/.gitkeep
+images/relegated/*
+!images/relegated/.gitkeep
+images/standings/*
+!images/standings/.gitkeep
+images/next-matchday/*
+!images/next-matchday/.gitkeep
