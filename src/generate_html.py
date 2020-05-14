@@ -21,19 +21,24 @@ def generate_match_html(division, teams, match, matchday, match_number):
     return html
 
 
-def generate_standings_html():
+def generate_standings_html(standings):
     """
 
     """
-    return standing_template.template
+    html = standing_template.template.format(
+        body = standings.to_html(index=True)
+    )
+    return html
 
 
-def generate_next_matchday_html():
+def generate_next_matchday_html(next_matchday):
     """
 
     """
-    retutn next_matchday_template.template
-
+    html = next_matchday_template.template.format(
+        body = next_matchday.to_html(index=False)
+    )
+    return html
 
 def generate_champion_html(division, champion):
     """
