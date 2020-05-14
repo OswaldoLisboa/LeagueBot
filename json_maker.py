@@ -7,7 +7,7 @@ json file with the information.
 import json
 import sys
 import pandas as pd
-import create_league
+from src import create_league
 
 
 if __name__ == "__main__":
@@ -23,10 +23,10 @@ if __name__ == "__main__":
         teams[create_league.DIVISIONS[i]] = {}
 
     for i, row in df.iterrows():
-        teams[create_league.DIVISIONS[row["Division"]]][row["Code"]] = {}
-        teams[create_league.DIVISIONS[row["Division"]]][row["Code"]]["Name"] = row["Name"]
-        teams[create_league.DIVISIONS[row["Division"]]][row["Code"]]["Twitter"] = row["Twitter"]
-        teams[create_league.DIVISIONS[row["Division"]]][row["Code"]]["Crest"] = row["Crest"]
+        teams[create_league.DIVISIONS[row["Division"]]][row["Index"]] = {}
+        teams[create_league.DIVISIONS[row["Division"]]][row["Index"]]["Name"] = row["Name"]
+        teams[create_league.DIVISIONS[row["Division"]]][row["Index"]]["Twitter"] = row["Twitter"]
+        teams[create_league.DIVISIONS[row["Division"]]][row["Index"]]["Crest"] = row["Crest"]
 
     with open(json_file, "w", encoding="utf-8") as file:
         json.dump(teams, file, ensure_ascii=False)
