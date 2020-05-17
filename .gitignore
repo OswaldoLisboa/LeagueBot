@@ -2,6 +2,7 @@
 *__pycache__
 src/credentials.py
 data/*
+images/twitter/*
 !data/.gitkeep
 images/champions/*
 !images/champions/.gitkeep
