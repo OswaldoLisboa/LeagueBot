@@ -5,6 +5,7 @@ import imgkit
 import pandas as pd
 import datetime as dt
 
+
 STARTTIME = dt.datetime.now()
 
 
@@ -13,7 +14,6 @@ def str_to_timedelta(str):
 
     """
     td_list = str.split(",")
-    # print(td_list)
 
     days = float(td_list[0])
     hours = float(td_list[1])
@@ -28,15 +28,10 @@ def generate_images(row):
     """
 
     """
-    html = "{}.html".format(row["PATH"])
     jpg = "{}.jpg".format(row["PATH"])
 
-    with open(html, "w") as file:
-        file.write('<meta charset="UTF-8">\n')
-        file.write(row["HTML"])
-        file.close()
     options = {'format': 'jpg', 'width': 1024, 'disable-smart-width': ''}
-    imgkit.from_file(html, jpg, options=options)
+    imgkit.from_string(row["HTML"], jpg, options=options)
 
 
 if __name__ == "__main__":
