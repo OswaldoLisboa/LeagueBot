@@ -3,7 +3,9 @@ from templates import match_template, champion_template, promoted_template, rele
 
 def generate_match_html(division, teams, match, matchday, match_number):
     """
-
+    Create a string containing a html code with information about a match.
+    That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = match_template.template.format(
         division=division,
@@ -23,7 +25,9 @@ def generate_match_html(division, teams, match, matchday, match_number):
 
 def generate_standings_html(standings):
     """
-
+    Create a string containing a html code that represents a standing for a matchday.
+    That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = standing_template.template.format(
         body = standings.to_html(index=True)
@@ -33,7 +37,9 @@ def generate_standings_html(standings):
 
 def generate_next_matchday_html(next_matchday):
     """
-
+    Create a string containing a html code with information of all the matches
+    in a matchday. That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = next_matchday_template.template.format(
         body = next_matchday.to_html(index=False)
@@ -42,7 +48,9 @@ def generate_next_matchday_html(next_matchday):
 
 def generate_champion_html(division, champion):
     """
-
+    Create a string containing a html code with information about the champion.
+    That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = champion_template.template.format(
         division=division,
@@ -56,7 +64,9 @@ def generate_champion_html(division, champion):
 
 def generate_promoted_html(promoted_to, promoted_teams):
     """
-
+    Create a string containing a html code with information about the promoted teams.
+    That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = promoted_template.template.format(
         division=promoted_to,
@@ -75,7 +85,9 @@ def generate_promoted_html(promoted_to, promoted_teams):
 
 def generate_relegated_html(relegated_to, relegated_teams):
     """
-
+    Create a string containing a html code with information about the relegated teams. 
+    That string will be later written into a html file and a that file
+    will generata a png file that will be tweeted.
     """
     html = relegated_template.template.format(
         division=relegated_to,

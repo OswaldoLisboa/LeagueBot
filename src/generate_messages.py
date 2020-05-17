@@ -17,8 +17,8 @@ def generate_match_msg(division, teams, match, matchday, match_number):
         teams.loc[match["Away"]]["Twitter"].iloc[0]
     )
     match_msg += "#{} #{} #{} #WorldNationsLeagueSimulator".format(
-        teams.loc[match["Home"]]["Name"].iloc[0].replace(" ", ""),
-        teams.loc[match["Away"]]["Name"].iloc[0].replace(" ", ""),
+        teams.loc[match["Home"]]["Name"].iloc[0].replace(" ", "").replace(".", "").replace("'", ""),
+        teams.loc[match["Away"]]["Name"].iloc[0].replace(" ", "").replace(".", "").replace("'", ""),
         division.replace(" ", "")
     )
 
@@ -58,7 +58,7 @@ def generate_champion_msg(division, champion):
     champion_msg = "And the winner of the {} is ...\n\n{}!!!\n\nCongratulations.\n\n#{} #{} #WorldNationsLeagueSimulator".format(
         division,
         champion["Twitter"],
-        champion["Name"].replace(" ", ""),
+        champion["Name"].replace(" ", "").replace(".", "").replace("'", ""),
         division.replace(" ", "")
     )
     return champion_msg
@@ -73,9 +73,9 @@ def generate_promoted_msg(promoted_from, promoted_to, promoted_teams):
         promoted_teams.iloc[0]["Twitter"],
         promoted_teams.iloc[1]["Twitter"],
         promoted_teams.iloc[2]["Twitter"],
-        promoted_teams.iloc[0]["Name"].replace(" ", ""),
-        promoted_teams.iloc[1]["Name"].replace(" ", ""),
-        promoted_teams.iloc[2]["Name"].replace(" ", ""),
+        promoted_teams.iloc[0]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
+        promoted_teams.iloc[1]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
+        promoted_teams.iloc[2]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
         promoted_from.replace(" ", "")
     )
     return promoted_msg
@@ -90,9 +90,9 @@ def generate_relegated_msg(relegated_from, relegated_to, relegated_teams):
         relegated_teams.iloc[0]["Twitter"],
         relegated_teams.iloc[1]["Twitter"],
         relegated_teams.iloc[2]["Twitter"],
-        relegated_teams.iloc[0]["Name"].replace(" ", ""),
-        relegated_teams.iloc[1]["Name"].replace(" ", ""),
-        relegated_teams.iloc[2]["Name"].replace(" ", ""),
+        relegated_teams.iloc[0]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
+        relegated_teams.iloc[1]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
+        relegated_teams.iloc[2]["Name"].replace(" ", "").replace(".", "").replace("'", ""),
         relegated_from.replace(" ", "")
     )
     return relegated_msg

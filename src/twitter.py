@@ -13,7 +13,9 @@ api = tweepy.API(auth)
 
 
 def tweet(msg, img=None):
-
+    """
+    Twitts a message, if there is a image, it also tweets the image.
+    """
     if img:
         api.update_with_media(img, msg)
     else:

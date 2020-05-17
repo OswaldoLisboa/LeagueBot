@@ -5,7 +5,8 @@ from src import create_league, run_league, generate_messages, generate_html, gen
 
 def initialize_league(json_file):
     """
-
+    Reads a json file and return two lists: one containing the dataframes of
+    the teams in each division, and the other containing the fixtures of each division.
     """
     teams = {}
     fixtures = []
@@ -20,7 +21,8 @@ def initialize_league(json_file):
 
 def generate_schedule_promoted_relegated(teams, fixtures):
     """
-
+    Creates a csv file containing the time, message and image for each tweet.
+    It also returns two list of lists containing the promoted and relegated teams.
     """
     messages = pd.DataFrame(columns = ["TYPE", "DIV", "MD", "GM", "MSG", "HTML", "PATH", "TIMEDELTA", "SENT"])
     promotion = []
@@ -73,7 +75,8 @@ def generate_schedule_promoted_relegated(teams, fixtures):
 
 def handle_promotion_delegation(teams):
     """
-
+    Move the promoted teams to the upper divions and the relegated teams
+    to the lower division.
     """
     for i in range(len(create_league.DIVISIONS.keys())):
         if i + 1 != len(create_league.DIVISIONS.keys()):
@@ -87,7 +90,7 @@ def handle_promotion_delegation(teams):
 
 def update_json(teams, json_file):
     """
-
+    Update the json file after a season.
     """
     for i in create_league.DIVISIONS.keys():
         teams[create_league.DIVISIONS[i]] = json.loads(teams[create_league.DIVISIONS[i]].to_json(orient="index"))
@@ -101,5 +104,5 @@ if __name__ == "__main__":
 
     teams, fixtures = initialize_league(json_file)
     promotion, relegation = generate_schedule_promoted_relegated(teams, fixtures)
-    # teams = handle_promotion_delegation(teams)
+    teams = handle_promotion_delegation(teams)
     update_json(teams, json_file)

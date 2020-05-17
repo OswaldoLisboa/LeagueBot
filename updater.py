@@ -10,7 +10,7 @@ STARTTIME = dt.datetime.now()
 
 def str_to_timedelta(str):
     """
-
+    Convert a string formated as "day,hour,minute" to a datetime.timedelta object
     """
     td_list = str.split(",")
 
@@ -25,7 +25,8 @@ def str_to_timedelta(str):
 
 def generate_images(row):
     """
-
+    Create a html file with the code passed as argument, then convert it into
+    a jpg file and returns the jpg file roue.
     """
     html = "{}.html".format(row["PATH"])
     jpg = "{}.jpg".format(row["PATH"])
