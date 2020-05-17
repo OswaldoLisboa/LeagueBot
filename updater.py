@@ -5,7 +5,6 @@ import imgkit
 import pandas as pd
 import datetime as dt
 
-
 STARTTIME = dt.datetime.now()
 
 
@@ -28,10 +27,16 @@ def generate_images(row):
     """
 
     """
+    html = "{}.html".format(row["PATH"])
     jpg = "{}.jpg".format(row["PATH"])
 
+    with open(html, "w") as file:
+        file.write(row["HTML"])
+        file.close()
     options = {'format': 'jpg', 'width': 1024, 'disable-smart-width': ''}
-    imgkit.from_string(row["HTML"], jpg, options=options)
+    imgkit.from_file(html, jpg, options=options)
+
+    return jpg
 
 
 if __name__ == "__main__":
@@ -40,14 +45,13 @@ if __name__ == "__main__":
 
     schedule = pd.read_csv(csv_file)
 
-    schedule["TIMEDELTA"] = schedule["TIMEDELTA"].apply(str_to_timedelta)
-
     for i, row in schedule.iterrows():
         if row["SENT"] == False:
-            while STARTTIME + schedule.iloc[i]["TIMEDELTA"] > dt.datetime.now():
+            row["TIMEDELTA"] = str_to_timedelta(row["TIMEDELTA"])
+            while STARTTIME + row["TIMEDELTA"] > dt.datetime.now():
                 time.sleep(30)
-            generate_images(row)
-            twitter.tweet(row["MSG"], row["IMG"])
+            image = generate_images(row)
+            twitter.tweet(row["MSG"], image)
             row["SENT"] = True
             schedule.iloc[i] = row
-            schedule.to_csv("schedule.csv")
+            schedule.to_csv("data/messages.csv")

@@ -1,5 +1,5 @@
 import tweepy
-import credentials
+from . import credentials
 
 consumer_key = credentials.CONSUMER_KEY
 consumer_secret = credentials.CONSUMER_SECRET
