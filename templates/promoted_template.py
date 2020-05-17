@@ -1,4 +1,5 @@
-template = """<style>
+template = """<meta charset="UTF-8">
+<style>
   body {{
      background-image: -webkit-linear-gradient(right, #1d976c, #63da91);
      height: 512px;

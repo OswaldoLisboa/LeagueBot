@@ -1,4 +1,4 @@
-template = """
+template = """<meta charset="UTF-8">
 <body>
 {body}
 </body>
