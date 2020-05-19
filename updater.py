@@ -34,7 +34,7 @@ def generate_images(row):
     with open(html, "w") as file:
         file.write(row["HTML"])
         file.close()
-    options = {'format': 'jpg', 'width': 1024, 'disable-smart-width': ''}
+    options = {'format': 'jpg', 'width': 1024}
     imgkit.from_file(html, jpg, options=options)
 
     return jpg
