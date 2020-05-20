@@ -1,4 +1,5 @@
 import sys
+import os
 import imgkit
 import pandas as pd
 
@@ -16,6 +17,7 @@ def generate_images(row):
         file.close()
     options = {'format': 'jpg', 'width': 1024}
     imgkit.from_file(html, jpg, options=options)
+    os.system("rm -f {}.html".format(row["PATH"]))
 
 
 if __name__ == "__main__":
