@@ -17,6 +17,7 @@ def generate_images(row):
         file.close()
     options = {'format': 'jpg', 'width': 1024}
     imgkit.from_file(html, jpg, options=options)
+    print("Just created {}.jpg".format(row["PATH"]))
     os.system("rm -f {}.html".format(row["PATH"]))
 
 
@@ -27,4 +28,5 @@ if __name__ == "__main__":
     schedule = pd.read_csv(csv_file)
 
     for i, row in schedule.iterrows():
-        generate_images(row)
+        if not os.path.isfile("{}.jpg".format(row["PATH"])):
+            generate_images(row)
