@@ -1,3 +1,8 @@
+"""
+Create the messages to be tweeted and modifies the json file after one season.
+"""
+
+
 import sys
 import pandas as pd
 import json
