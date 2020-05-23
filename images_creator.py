@@ -1,3 +1,9 @@
+"""
+Read a csv file and transform it into a DataFrame.
+Then use the html code (in form of a string) inside each cell to create an image.
+"""
+
+
 import sys
 import os
 import imgkit

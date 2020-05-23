@@ -1,3 +1,10 @@
+"""
+Read a csv file and transform it into a DataFrame.
+Then it reads through all rows of the dataframe and tweets its message and image
+acording schedule.
+"""
+
+
 from src import twitter
 import time
 import sys
