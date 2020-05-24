@@ -6,7 +6,7 @@ Create the messages to be tweeted and modifies the json file after one season.
 import sys
 import pandas as pd
 import json
-from src import create_league, run_league, generate_messages, generate_html, generate_path
+from helpers import create_league, run_league, generate_messages, generate_html, generate_path
 
 def initialize_league(json_file):
     """

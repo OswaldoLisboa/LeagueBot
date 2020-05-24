@@ -5,7 +5,7 @@ acording schedule.
 """
 
 
-from src import twitter
+from helpers import twitter
 import time
 import sys
 import datetime as dt

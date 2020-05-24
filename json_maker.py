@@ -7,7 +7,7 @@ json file with the information.
 import json
 import sys
 import pandas as pd
-from src import create_league
+from helpers import create_league
 
 
 if __name__ == "__main__":
