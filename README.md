@@ -1,8 +1,8 @@
-#LeagueBot
+# LeagueBot
 
 LeagueBot is a tool to create, simulate and tweet the results of a football league.
 
-##Prerequisites
+## Prerequisites
 
 To use LeagueBot you need to install the following packages:
 
@@ -50,3 +50,7 @@ This script also iterates through the csv file created with messages_creator.py.
 
 ##### Usage
     python3 updater.py your_json_file.json
+
+This is an example of a tweet sent by updater.py:
+
+![Tweet example](images/readme/tweet_example.png)
